@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Ttle>Website PHP Rekayasa Perangkat Lunak</Title>
+            <style>
+                header h1.title,
+header h3.desc {
+    text-align: center;
+}
+body {
+    width: 70%;
+    margin: auto;
+}
+a:link {
+    color: rgb(240, 32, 32);
+}
+a:visited {
+    color: rgb(119, 0, 255);
+}
+a:hover {
+    color: rgb(249, 250, 182);
+}
+a:active {
+    color: teal;
+}
+#navigation {}
+p {
+    font-size: 110%;
+    color: black;
+}
+#contents {
+    float: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(252, 247, 0);
+    font-family: sans-serif;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(148, 148, 148);
+}
+footer {
+    text-align: center;
+}
+		</style>
+    <meta charset="UTF-8">
+    <meta name="description" contents="Reka Tutorial">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Reka Tutorial</h1>
+        <h3 class="desc">Membuat Website dengan PHP untuk Pemula</h3>
+        <nav id="navigation">
+            <ul>
+                <li><a href="file:///D:/belajarphp/home%20new.html">Home</a></li>
+                <li><a href="file:///D:/belajarhtml/keahlian%20php.html">Keahlian</a></li>
+                <li><a href="file:///D:/belajarhtml/Biodata%20Satrio.html">Contact</a></li>
+                <li><a href="c:\Users\ACER\Pictures\8bbcaca0-4b93-4741-9d8f-5fd6c6c490f3.jpg">Galeri</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contents">
+        <?php
+        if (isset($_GET['page'])) {
+            $page = $_GET['page'];
+            switch ($page) {
+                case 'home':$_GET['satrio'];
+                    include "home.php";$_GET['satrio'];
+                    break;
+                case 'Keahlian':
+                    include "Keahlian.php";
+                    break;
+                case 'contact':
+                    include "contact.php";
+                    break;
+                case 'galeri':
+                    include "galeri.php";
+                    break;
+            }
+        } else {
+            include "home.php";
+        }
+            </style>
+            <meta charset="UTF-8">
+            <meta name="description" contents="Reka Tutorial">
+            <link rel="stylesheet"href="style.css" type="text/css">
+        </head>
+        <body>
+            <header>     
