@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+</style>
+</head>
+<body>
+
+<h1>Macam- macam warna</h1>
+
+<h2></h2>
+<h2>hitam</h2>
+<h2>Putih</h2>
+<h2>Pink</h2>
+<h2>Ungu</h2>
+
+</body>
+</html>
