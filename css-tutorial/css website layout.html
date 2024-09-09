@@ -5,18 +5,21 @@
 * {
   box-sizing: border-box;
 }
+div p{
+  background-color: rgb(162, 172, 172);
+}
 
 body {
   font-family: Arial;
   padding: 10px;
-  background: #f1f1f1;
+  background: rgb(205, 207, 207);
 }
 
 /* Header/Blog Title */
 .header {
   padding: 30px;
   text-align: center;
-  background: white;
+  background: rgb(170, 167, 167);
 }
 
 .header h1 {
@@ -27,6 +30,9 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  border: 15px solid rgb(243, 247, 243);
+  padding: 50px;
+  margin: 20px;
 }
 
 /* Style the topnav links */
@@ -37,6 +43,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
 
 /* Change color on hover */
@@ -48,13 +55,13 @@ body {
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
-  float: left;
+  float: right;
   width: 75%;
 }
 
 /* Right column */
 .rightcolumn {
-  float: left;
+  float: right;
   width: 25%;
   background-color: #f1f1f1;
   padding-left: 20px;
@@ -104,61 +111,61 @@ body {
     width: 100%;
   }
 }
+
 </style>
 </head>
 <body>
-
+<div>
 <div class="header">
-  <h1>My Website</h1>
+  <h1><div>My Website</div></h1>
   <p>Website Pertamaku</p>
+</div>
 </div>
 
 <div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a href="D:belajar-css\css-tutorial/css float.html">CSS FLOAT</a>
+  <a href="D:belajar-css\css-advanced/css flexbox.html">CSS FLEXBOX</a>
+  <a href="D:belajar-css\css-grid/css grid.html">CSS GRID</a>
   <a href="#" style="float:right">Link</a>
 </div>
-
+<div>
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>TITLE HEADING</h2>
+      <h2>CERITA SAYA</h2>
       <h5>Title description, 31 Agustus, 2024</h5>
-      <div class="fakeimg" style="height:200px;"><img src="c:\Users\ACER\Pictures\9eadb1b7-90a3-418f-8e79-d64216ce3765.jpg" height="170" widht="500"></div>
-      <p>Some text..</p>
+    <div class="fakeimg" style="height:200px;"><img src="c:\Users\ACER\Pictures\WhatsApp Image 2023-11-24 at 15.27.50_c4c70cce.jpg"style="border-style" height="170" widht="1"></div>
+      <p>Foto ini saat saya pelantikan,dan dimana saat itu saya sangat bahagia sekali karna pelantikan adalah hari yang di tunggu-tunggu oleh catar-catir.</p>
       <p></p>
     </div>
+    </div>
     <div class="card">
-      <h2>TITLE HEADING</h2>
+      <h2>CERITA SAYA</h2>
       <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <div class="fakeimg" style="height:200px;"><img src="c:\Users\ACER\Pictures\WhatsApp Image 2023-11-25 at 20.35.39_f0bd755f.jpg" height="170"></div>
+      <p>Foto ini adalah saat saya berlibur ke bandung dan tempatnya yaitu tempat ice cream,ice cream nya bermacam-macam jenis dan enak-enak mantap pokonyamah</p>
     </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2>CERITA SAYA</h2>
+      <div class="fakeimg" style="height:100px;"><img src="c:\Users\ACER\Pictures\WhatsApp Image 2023-11-25 at 20.35.40_e18be7ca.jpg"height="80"></div>
+      <p>Foto ini ketika saya berlibur ke pantai pangandaran bersama keluarga saya,pantai nya sangat-sangat bagus dan cantik sekali dan banyak orang bule di situ.</p>
     </div>
     <div class="card">
       <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p><img src="c:\Users\ACER\Pictures\Mikasa.png"height="70"></p></div>
+      <div class="fakeimg"><p><img src="c:\Users\ACER\Pictures\Screenshot 2023-11-17 142327.png"height="70"></p></div>
+      <div class="fakeimg"><p><img src="c:\Users\ACER\Pictures\Screenshot 2023-11-17 143106.png"height="70"></p></div>
     </div>
     <div class="card">
       <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <p>Itu saja cerita-cerita dari saya,terimakasih sudah melihat</p>
     </div>
-  </div>
-</div>
-
 <div class="footer">
   <h2>Footer</h2>
 </div>
 
 </body>
 </html>
+
